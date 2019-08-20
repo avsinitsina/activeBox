@@ -103,7 +103,7 @@ header{
 .btn{
     display: inline-block;
     vertical-align: top;
-
+    text-align: center;
     font-size: 14px;
     font-weight: 600;
     font-family: inherit;
@@ -122,6 +122,9 @@ header{
 }
 .btn--red:hover{
     background-color: #ca3232;
+}
+.btn--long{
+    min-width: 280px;
 }
 
 /*Features*/
@@ -311,4 +314,23 @@ header{
     font-weight: 700;
     color: white;
     text-transform: uppercase;
+}
+
+/* Download */
+.download{
+    text-align: center;
+    margin: 90px 0;
+}
+.download__title{
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.download__text{
+    font-size: 13px;
+    font-weight: 700;
+    color: #2d3033;
+    text-transform: uppercase;
+    margin-bottom: 35px;
 }
