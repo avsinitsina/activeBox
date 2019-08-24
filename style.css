@@ -41,14 +41,22 @@ header{
     padding: 35px 0; /*ВН ЛП*/
     align-items: center;
 }
-
+.header.fixed{
+    height: auto;
+    position: fixed;
+    background-color: #31344e;
+}
+.header.fixed .header__inner{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0;
+}
 /*Navigation*/
 .headerNav{
     display: flex;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
-    
 }
 .nav__link{
     margin-left: 50px;
