@@ -476,6 +476,9 @@ header{
     .nav__link{
         padding: 9px 15px;
     }
+    .header__nav.show{
+        display: flex;
+    }
     /* Burger */
     .burger{
         display: block;
