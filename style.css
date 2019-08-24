@@ -304,8 +304,50 @@ header{
     background-color: #53354a;
     overflow: hidden;
 }
+.reviews__slider{
+    height: 500px;
+    overflow: hidden;
+}
+.reviews__slider.slick-initialized{
+    height: auto;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slick-dots li{
+    margin: 0 5px;
+    padding-bottom: 20px;
+}
+.slick-dots button{
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0.5;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+.slick-dots button:focus{
+    outline: none;
+}
+.slick-dots .slick-active button{
+    opacity: 1;
+}
 .reviews__item{
     display: flex;
+    overflow: hidden;
     flex-wrap: wrap;
 }
 .reviews__photo{

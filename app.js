@@ -44,5 +44,12 @@ $(function(){
         nav.toggleClass("show");
     });
 
+    // Reviews
+    let slider = $("#reviewsSlider");
+    slider.slick({
+        fade: true,
+        arrows: false,
+        dots: true
+    });
 
 });
