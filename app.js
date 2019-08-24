@@ -3,22 +3,35 @@ $(function(){
     // Fixed header
     let header = $("#header");
     let intro = $("#intro");
-    let introHeight;
+    let introHeight = intro.innerHeight();
     let scrollPosition = $(window).scrollTop();
 
-    $(window).on('scroll load resize', function(){
+    checkScroll(scrollPosition, introHeight);
+    $(window).on('scroll resize', function(){
         introHeight = intro.innerHeight();
         scrollPosition = $(this).scrollTop();
 
+        checkScroll(scrollPosition, introHeight)
+    });
+
+    function checkScroll(scrollPosition, introHeight){
         if(scrollPosition > introHeight) header.addClass("fixed");
         else header.removeClass("fixed");
-        console.log(scrollPosition);
-    });
+    }
     
     // Smooth scroll
-    $("[sata-scroll]").on("click", function(event){
+    $("[data-scroll]").on("click", function(event){
         event.preventDefault();
 
-        let elementID = 
+        let elementId = $(this).data('scroll');
+        let elementOffset = $(elementId).offset().top;
+
+        console.log(elementOffset);
+    
+        $("html, body").animate({
+            scrollTop: elementOffset - 70
+        }, 700);
     });
+
+    // 
 });
