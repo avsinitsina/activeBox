@@ -496,7 +496,7 @@ header{
     bottom: -8px;
 }
 /* Media */
-@media (max-width: 1300px){
+@media (max-width: 1100px){
     /* Works */
     .works__item{
         width: 50%;
